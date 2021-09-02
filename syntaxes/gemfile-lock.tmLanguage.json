@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Gemfile.lock",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"match": "^[A-Z ]+",
+			"name": "keyword.control"
+		},
+		{
+			"match": "(?<=^ +)[a-z]+(?=:)",
+			"name": "support.type"
+		},
+		{
+			"match": "[<>]=?|~>",
+			"name": "keyword.operator"
+		},
+		{
+			"match": "[0-9]+\\.[0-9]+(\\.[0-9]+)?",
+			"name": "constant.numeric"
+		},
+		{
+			"match": "https?://[\\w./]+",
+			"name": "string.other"
+		},
+		{
+			"match": "(?<=^ {4})\\S+",
+			"name": "entity.name.function"
+		},
+		{
+			"match": "(?<=^ {6})\\S+",
+			"name": "variable.parameter"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.gemfile-lock",
+					"match": "\\b(if|while|for|return)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.gemfile-lock",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gemfile-lock",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.gemfile-lock"
+}

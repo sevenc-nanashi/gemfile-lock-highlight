@@ -1,0 +1,25 @@
+{
+    "name": "gemfile-lock-highlight",
+    "displayName": "Gemfile-lock-highlight",
+    "description": "This extension will highlight Gemfile.lock.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "gemfile-lock",
+            "aliases": ["Gemfile.lock", "gemfile-lock"],
+            "extensions": ["Gemfile.lock"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gemfile-lock",
+            "scopeName": "source.gemfile-lock",
+            "path": "./syntaxes/gemfile-lock.tmLanguage.json"
+        }]
+    }
+}
