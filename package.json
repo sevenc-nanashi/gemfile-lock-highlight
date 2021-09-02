@@ -1,8 +1,13 @@
 {
     "name": "gemfile-lock-highlight",
-    "displayName": "Gemfile-lock-highlight",
+    "displayName": "Gemfile.lock highlight",
     "description": "This extension will highlight Gemfile.lock.",
     "version": "1.0.0",
+    "publisher": "sevenc-nanashi",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sevenc-nanashi/gemfile-lock-highlight"
+    },
     "engines": {
         "vscode": "^1.46.0"
     },
