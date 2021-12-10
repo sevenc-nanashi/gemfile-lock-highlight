@@ -4,7 +4,7 @@ This extension highlights the Gemfile.lock in your editor.
 
 ## Features
 
-![Highlight]\(images/01.png\)
+![Highlight](images/01.png)
 
 ### 1.0.0
 
