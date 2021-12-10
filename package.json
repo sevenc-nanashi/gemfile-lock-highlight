@@ -2,7 +2,7 @@
     "name": "gemfile-lock-highlight",
     "displayName": "Gemfile.lock highlight",
     "description": "This extension will highlight Gemfile.lock.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "sevenc-nanashi",
     "repository": {
         "type": "git",
@@ -15,16 +15,25 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "gemfile-lock",
-            "aliases": ["Gemfile.lock", "gemfile-lock"],
-            "extensions": ["Gemfile.lock"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "gemfile-lock",
-            "scopeName": "source.gemfile-lock",
-            "path": "./syntaxes/gemfile-lock.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "gemfile-lock",
+                "aliases": [
+                    "Gemfile.lock",
+                    "gemfile-lock"
+                ],
+                "extensions": [
+                    "Gemfile.lock"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "gemfile-lock",
+                "scopeName": "source.gemfile-lock",
+                "path": "./syntaxes/gemfile-lock.tmLanguage.json"
+            }
+        ]
     }
 }
